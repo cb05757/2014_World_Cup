@@ -1,0 +1,178 @@
+	/* Colors on flag
+
+		#027649 - Green
+		#F9DA03 - Yellow
+		#1A3C84 - Blue
+		#E3E6DD - White
+	*/
+	
+	body{
+		/*background-color:#027649;  Green */ 
+		background-image:url('images/grass.jpg');
+		background-color:#cccccc;
+	}
+
+	#wrapper {
+		width:95%;
+		margin-left:auto;
+		margin-right:auto;
+		font-family:Georgia, Serif;
+		background-color:#1A3C84; /* Blue */
+		color: yellow;
+
+		min-width:1160px;
+		min-height: 200px;
+		box-shadow: 10px 10px 5px #35373C;
+	}
+
+	#header {
+		color:#1A3C84;
+		font-family:"Arial Black", sans-serif;
+		background-color:#F9DA03;
+		text-align: center;
+
+		margin-bottom:0;
+		padding-bottom: 5px;
+	}
+	
+	#nav{
+		width:160px;
+		float:left;
+
+		font-family:Tahoma, sans-serif;
+		color:#F9DA03;
+		text-align: center;
+		padding-bottom: 5px;
+	}
+	
+	#content{
+		font-family:Times, "Times New Roman", serif;
+		color:black;
+		background-color:#E3E6DD;
+
+		margin-left: 160px;
+		padding-top: 0px;
+		margin-top: 0;
+		padding-bottom: 10px;
+
+		padding-left: 10px;
+		padding-right: 10px;
+		min-height: 200px;
+
+	}
+
+	#nav a{
+		color:#F9DA03;
+		font-family:Helvetica, sans-serif;
+		text-decoration:none;
+		display:block
+	}
+
+	#nav a:hover { /* mouse over link */
+		color:#1E8091;
+		background-color: #E8E8E8;
+		text-decoration:none;
+	}
+
+	#nav ul{
+		list-style-type: none;
+		padding: 0;
+		margin-top: 5px;
+	}
+
+	#nav li{
+		padding-top: 3px;
+	}
+
+	table{
+		text-align: center;
+		margin: auto;
+		border-collapse: collapse;
+	}
+
+	#bracket select{
+		min-width: 98px;
+	}
+
+	#teamTable{
+		border-collapse: collapse;
+	}
+
+	#teamTable td{
+		padding:4px;
+		border-collapse:collapse;
+		/*border:2px solid #808080; */
+		border-right: 2px solid #808080;;
+		border-left: 2px solid #808080;;
+		color:#000066;
+	}
+
+	#teamTable th{
+		color:white;
+		background-color: #5a535c;
+		padding:4px;
+		border-collapse:collapse;
+		border:2px solid #5a535c ;
+	}
+
+	#thingsToDo img{
+		float:left;
+		padding-right: 5px;
+		padding-top: 0px;
+	}
+
+	.clear{
+		clear: both;
+	}
+
+	.center{
+		text-align: center;
+	}
+
+	#bracket{
+		background:url('images/soccer_background.jpg') center;
+
+		background-color:#cccccc;
+		background-size: 100%;
+	}
+
+	.africa{
+		background-color:#DFB786;
+	}
+
+	.asia{
+		background-color:#FFB6C1;
+	}
+
+	.europe{
+		background-color:#4682B4;
+	}
+
+	.namerica{
+		background-color:#DC7092;
+	}
+
+	.samerica{
+		background-color:#8EBC8E;
+	}
+
+	#tableSchedule td,th{
+		border-left: 2px solid black;
+		width:150px;
+
+	}
+
+	#header h1{
+		font-family: "Crimson Text";
+	}
+
+	h1,h2{
+		padding-top: 5px;
+		margin-top: 0;
+	}
+	
+
+
+
+
+

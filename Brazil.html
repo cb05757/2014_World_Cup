@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>2014 World Cup :: Brazil</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+
+		<script type="text/javascript">
+			function convertCurrency() { // March 17, 2014 currency rate	
+				if(document.getElementById("DtoR").checked){ // Dollars to Reals
+					var dollars = document.currencyForm.txtdollars.value;
+					var results = parseFloat(dollars) * 2.33; 
+					document.currencyForm.txtreals.value = results;
+				}else{ // Reals to Dollars
+					var reals = document.currencyForm.txtreals.value;
+					var results = parseFloat(reals) * .43;
+					document.currencyForm.txtdollars.value = results;
+				}	
+			}
+			
+		</script>
+
+</head>
+<body>
+	<div id="wrapper">
+
+	    <div id="header">
+
+        	<img src="images/logo.png" width="428" height="73" alt="logo">
+    	</div>
+
+		<div id="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Brazil.html">Brazil</a></li>
+				<li><a href="Bracket.html">Bracket</a></li>
+				<li><a href="Teams.html">Teams</a></li>
+			</ul>
+		</div>
+
+			<div id="content">
+			
+				<h1>Brazil</h1>
+				<div class="center">
+					<img src="images/map_of_brazil.jpg" height="350" width="466" alt="Map of Brazil">
+				</div>
+				<h2>About</h2>
+					<p>Brazil is the world's fifth largest country in terms of area and population. It borders all other South American countries except Ecuador and Chile and occupies 47 percent of the continent of South America. The capitol is Brasília while the largest city is São Paulo. The official language is Portuguese and the nation currency is the Brazilian Real.</p>
+			<div id="thingsToDo">
+				<h2>Things To Do</h2>
+
+
+					<h3>Christ the Redeemer</h3>
+					<img src="images/christ.jpg" height="138" width="200" alt="Christ the Redeemer">
+					<p>This statue, which towers over Rio, made the list of the Seven New Wonders of the World in 2007. It stands 120 feet tall and is perched on the top of Corcovado Mountain. Giving breath taking views of the Rio de Janeiro below.
+					</p>
+					<br class="clear">
+
+					<h3>Rio de Janerio's beaches and mountains</h3>
+					<img src="images/beach.jpg" height="130" width="200" alt="Rio beach">
+					<p>Rio de Janeiro is lined with glorious tropical beaches. Most of these beaches have sparkling crystal clear blue water, pristine white sand and amazing views of the mountains all across the country.
+					</p>
+					<br class="clear">
+
+					<h3>Iguazu Falls</h3>
+					<img src="images/iguac.jpg" height="140" width="200" alt="Iguazu Falls">
+					<p>The Iguazu falls are 269 feet high and 1.67 miles wide. The widest falls in the world.
+					</p>
+					<br class="clear">
+
+					<h3>Manaus</h3>
+					<img src="images/manaus.jpg" height="150" width="200" alt="Manaus">
+					<p>Manaus is known as the gateway to the Amazon. It is a colonial city in the heart of the Amazon jungle on the Rio Negro a river that eventually joins with the Amazon River.
+					</p>
+					<br class="clear">
+
+					<h3>Salvador de Bahia</h3>
+					<img src="images/salvador.jpg" height="150" width="200" alt="Salvador">
+					<p>The city is rich in colonial history and architecture, the center of Afro-Brazilian culture and home to the second-best Carnival, after that in Rio.
+					</p>
+					<br class="clear">
+
+					<h3>Sao Paulo</h3>
+					<img src="images/paulo.jpg" height="125" width="200" alt="Sao Paulo">
+					<p>Sao Paulo is Brazil’s largest and richest city, the country’s business center and the seventh-largest metropolitan area in the world.
+					</p>
+					<br class="clear">
+			</div>
+				<h2>Helpful tools for your visit</h2>
+				
+				<form name="currencyForm" style="width:40px">
+				<fieldset>
+				<legend>Currency Converter</legend>
+
+					<label for="txtdollars">Dollars:</label>
+					<input type="text" id="txtdollars" name="txtdollars">
+					<br>
+
+					<label for="txtreals">Reals:</label>
+					<input type="text" id="txtreals" name="txtreals">
+					<br>
+
+					<br>
+					<div class="center">
+					<input type="radio" name="currency" id="DtoR" value="dollar" checked="checked">Dollars to Reals<br>
+					<input type="radio" name="currency" id="RtoD" value="real">Reals to Dollars<br>
+
+					<br>
+					
+					<input type="button" value="Convert" onClick="convertCurrency()">
+					</div>
+					</fieldset>
+				</form>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2014 World Cup :: Bracket</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+
+
+	<script type="text/javascript">
+
+		function copySelection(source, dest, destOption) {
+			var x = document.getElementById(source);
+			var y = document.getElementById(dest);
+			if(checkDuplicates(source) == true){
+				y.options[destOption] = new Option(x.options[x.selectedIndex].text, x.options[x.selectedIndex].value);
+			} else{
+				y.remove(destOption);
+			}
+		}
+
+		function checkDuplicates(selected){
+			var check = document.getElementById(selected);
+
+			switch(selected){
+				case "1a":
+					var test = document.getElementById("2a");
+					if(check.options[check.selectedIndex].value == test.options[test.selectedIndex].value){
+						alert("You have selected the same option twice. Please change one.");
+						return false;
+					} else {
+						return true;
+					}
+  				break;
+				case "2a":
+  					var test = document.getElementById("1a");
+					if(check.options[check.selectedIndex].value == test.options[test.selectedIndex].value){
+						alert("You have selected the same option twice. Please change one.");
+						return false;
+					} else {
+						return true;
+					}
+  				break;
+  				case "1b":
+  					var test = document.getElementById("2b");
+					if(check.options[check.selectedIndex].value == test.options[test.selectedIndex].value){
+						alert("You have selected the same option twice. Please change one.");
+						return false;
+					} else {
+						return true;
+					}
+  				break;
+  				case "2b":
+  					var test = document.getElementById("1b");
+					if(check.options[check.selectedIndex].value == test.options[test.selectedIndex].value){
+						alert("You have selected the same option twice. Please change one.");
+						return false;
+					} else {
+						return true;
+					}
+  				break;
+  				case "1c":
+  				 	var test = document.getElementById("2c");
+					if(check.options[check.selectedIndex].value == test.options[test.selectedIndex].value){
+						alert("You have selected the same option twice. Please change one.");
+						return false;
+					} else {
+						return true;
+					}
+  				break;
+  				case "2c":
+  					var test = document.getElementById("1c");
+					if(check.options[check.selectedIndex].value == test.options[test.selectedIndex].value){
+						alert("You have selected the same option twice. Please change one.");
+						return false;
+					} else {
+						return true;
+					}
+  				break;
+  				case "1d":
+  				 	var test = document.getElementById("2d");
+					if(check.options[check.selectedIndex].value == test.options[test.selectedIndex].value){
+						alert("You have selected the same option twice. Please change one.");
+						return false;
+					} else {
+						return true;
+					}
+  				break;
+  				case "2d":
+  				 	var test = document.getElementById("1d");
+					if(check.options[check.selectedIndex].value == test.options[test.selectedIndex].value){
+						alert("You have selected the same option twice. Please change one.");
+						return false;
+					} else {
+						return true;
+					}
+  				break;
+
+  				case "1e":
+  				 	var test = document.getElementById("2e");
+					if(check.options[check.selectedIndex].value == test.options[test.selectedIndex].value){
+						alert("You have selected the same option twice. Please change one.");
+						return false;
+					} else {
+						return true;
+					}
+  				break;
+  				case "2e":
+  					 var test = document.getElementById("1e");
+					if(check.options[check.selectedIndex].value == test.options[test.selectedIndex].value){
+						alert("You have selected the same option twice. Please change one.");
+						return false;
+					} else {
+						return true;
+					}
+
+  				break;
+  				case "1f":
+ 					var test = document.getElementById("2f");
+					if(check.options[check.selectedIndex].value == test.options[test.selectedIndex].value){
+						alert("You have selected the same option twice. Please change one.");
+						return false;
+					} else {
+						return true;
+					}
+  				break;
+  				case "2f":
+ 					var test = document.getElementById("1f");
+					if(check.options[check.selectedIndex].value == test.options[test.selectedIndex].value){
+						alert("You have selected the same option twice. Please change one.");
+						return false;
+					} else {
+						return true;
+					}
+  				break;
+  				case "1g":
+ 					var test = document.getElementById("2g");
+					if(check.options[check.selectedIndex].value == test.options[test.selectedIndex].value){
+						alert("You have selected the same option twice. Please change one.");
+						return false;
+					} else {
+						return true;
+					}
+  				break;
+  				case "2g":
+ 					var test = document.getElementById("1g");
+					if(check.options[check.selectedIndex].value == test.options[test.selectedIndex].value){
+						alert("You have selected the same option twice. Please change one.");
+						return false;
+					} else {
+						return true;
+					}
+  				break;
+  				case "1h":
+ 					var test = document.getElementById("2h");
+					if(check.options[check.selectedIndex].value == test.options[test.selectedIndex].value){
+						alert("You have selected the same option twice. Please change one.");
+						return false;
+					} else {
+						return true;
+					}
+  				break;
+  				case "2h":
+ 					var test = document.getElementById("1h");
+					if(check.options[check.selectedIndex].value == test.options[test.selectedIndex].value){
+						alert("You have selected the same option twice. Please change one.");
+						return false;
+					} else {
+						return true;
+					}
+  				break;
+
+				default:
+ 					
+ 					return true;
+			}
+		}
+
+	</script>
+
+</head>
+<body>
+	<div id="wrapper">
+
+	    <div id="header">
+        	<img src="images/logo.png" width="428" height="73" alt="logo"> 
+    	</div>
+
+		<div id="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Brazil.html">Brazil</a></li>
+				<li><a href="Bracket.html">Bracket</a></li>
+				<li><a href="Teams.html">Teams</a></li>
+			</ul>
+		</div>
+
+			<div id="content">
+			<h2>2014 World Cup Bracket</h2>
+
+			<form id="bracket">
+
+				<table style="width:500px">
+					<tr>
+						<td style="border-bottom:solid"><select id="1a" onchange="copySelection('1a', '1a2b', 1)">
+  								<option value="1a">1A</option>
+  								<option value="brazil">Brazil</option>
+  								<option value="croatia">Croatia</option>
+  								<option value="mexico">Mexico</option>
+  								<option value="cameroon">Cameroon</option>
+						</select></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="border-bottom:solid"><select id="1b" onchange="copySelection('1b', '1b2a', 1)">
+  								<option value="1b">1B</option>
+  								<option value="spain">Spain</option>
+  								<option value="netherlands">Netherlands</option>
+  								<option value="chile">Chile</option>
+  								<option value="australia">Australia</option>
+						</select></td>
+					</tr>
+
+					<tr>
+						<td style="border-right:solid"></td>
+						<td style="border-bottom:solid"><select id="1a2b" onchange="copySelection('1a2b', '1a2b.1c2d', 1)">
+						</select></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="border-bottom:solid"><select id="1b2a" onchange="copySelection('1b2a', '1b2a.1d2c', 1)">
+						</select></td>
+						<td style="border-left:solid"></td>
+					</tr>
+
+					<tr>
+						<td style="border-top:solid"><select id="2b" onchange="copySelection('2b', '1a2b', 2)">
+  								<option value="2b">2B</option>
+  								<option value="spain">Spain</option>
+  								<option value="netherlands">Netherlands</option>
+  								<option value="chile">Chile</option>
+  								<option value="australia">Australia</option>
+						</select></td>
+						<td></td>
+						<td style="border-left:solid"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="border-right:solid"></td>
+						<td></td>
+						<td style="border-top:solid"><select id="2a" onchange="copySelection('2a', '1b2a', 2)">
+  								<option value="2a">2A</option>
+  								<option value="brazil">Brazil</option>
+  								<option value="croatia">Croatia</option>
+  								<option value="mexico">Mexico</option>
+  								<option value="cameroon">Cameroon</option>
+						</select></td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td style="border-left:solid;border-bottom:solid"><select id="1a2b.1c2d" onchange="copySelection('1a2b.1c2d', 'final1', 1)">
+						</select></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="border-right:solid;border-bottom:solid"><select id="1b2a.1d2c" onchange="copySelection('1b2a.1d2c', 'final2', 1)">
+						</select></td>
+						<td></td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td style="border-bottom:solid"><select id="1c" onchange="copySelection('1c', '1c2d', 1)">
+  								<option value="1c">1C</option>
+  								<option value="colombia">Colombia</option>
+  								<option value="greece">Greece</option>
+  								<option value="cote_d_ivoire">Cote d'Ivoire</option>
+  								<option value="japan">Japan</option>
+						</select></td>
+						<td></td>
+						<td style="border-left:solid"></td>
+						<td style="border-left:solid"></td>
+						<td></td>
+						<td style="border-right:solid"></td>
+						<td style="border-right:solid"></td>
+						<td></td>
+						<td style="border-bottom:solid"><select id="1d" onchange="copySelection('1d', '1d2c', 1)">
+  								<option value="1d">1D</option>
+  								<option value="uruguay">Uruguay</option>
+  								<option value="costa_rica">Costa Rica</option>
+  								<option value="england">England</option>
+  								<option value="italt">Italy</option>
+						</select></td>
+					</tr>
+
+					<tr>
+						<td style="border-right:solid"></td>
+						<td style="border-top:solid"><select id="1c2d" onchange="copySelection('1c2d', '1a2b.1c2d', 2)">
+						</select></td>
+						<td></td>
+						<td style="border-left:solid"></td>
+						<td></td>
+						<td style="border-right:solid"></td>
+						<td></td>
+						<td style="border-top:solid"><select id="1d2c" onchange="copySelection('1d2c', '1b2a.1d2c', 2)">
+						</select></td>
+						<td style="border-left:solid"></td>
+					</tr>
+
+					<tr>
+						<td style="border-top:solid"><select id="2d" onchange="copySelection('2d', '1c2d', 2)">
+  								<option value="2d">2D</option>
+  								<option value="uruguay">Uruguay</option>
+  								<option value="costa_rica">Costa Rica</option>
+  								<option value="england">England</option>
+  								<option value="italt">Italy</option>
+						</select></td>
+						<td></td>
+						<td></td>
+						<td style="border-left:solid"></td>
+						<td></td>
+						<td style="border-right:solid"></td>
+						<td></td>
+						<td></td>
+						<td style="border-top:solid"><select id="2c" onchange="copySelection('2c', '1d2c', 2)">
+  								<option value="2c">2C</option>
+  								<option value="colombia">Colombia</option>
+  								<option value="greece">Greece</option>
+  								<option value="cote_d_ivoire">Cote d'Ivoire</option>
+  								<option value="japan">Japan</option>
+						</select></td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td style="border-right:solid"></td>
+						<td style="border-bottom:solid"><select id="final1" onchange="copySelection('final1', 'overall', 1)">
+						</select></td>
+						<td style="border-right:solid;border-left:solid;border-top:solid"><select id="overall">
+						</select></td>
+						<td style="border-bottom:solid"><select id="final2" onchange="copySelection('final2', 'overall', 2)">
+						</select></td>
+						<td style="border-left:solid"></td>
+						<td></td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td style="border-bottom:solid"><select id="1e" onchange="copySelection('1e', '1e2f', 1)">
+  								<option value="1e">1E</option>
+  								<option value="switzerland">Switzerland</option>
+  								<option value="ecuador">Ecuador</option>
+  								<option value="france">France</option>
+  								<option value="honduras">Honduras</option>
+						</select></td>
+						<td></td>
+						<td></td>
+						<td style="border-left:solid"></td>
+						<td></td>
+						<td style="border-right:solid"></td>
+						<td ></td>
+						<td></td>
+						<td style="border-bottom:solid"><select id="1f" onchange="copySelection('1f', '1f2e', 1)">
+  								<option value="1f">1F</option>
+  								<option value="argentina">Argentina</option>
+  								<option value="bosnia_herz">Bosnia-Herz</option>
+  								<option value="iran">Iran</option>
+  								<option value="nigeria">Nigeria</option>
+						</select></td>
+					</tr>
+
+					<tr>
+						<td style="border-right:solid"></td>
+						<td style="border-bottom:solid"><select id="1e2f" onchange="copySelection('1e2f', '1e2f.1g2h', 1)">
+						</select></td>
+						<td style="border-right:solid"></td>
+						<td></td>
+						<td></td>
+						<td style="border-right:solid"></td>
+						<td></td>
+						<td style="border-bottom:solid"><select id="1f2e" onchange="copySelection('1f2e', '1f2e.1h2g', 1)">
+						</select></td>
+						<td style="border-left:solid"></td>
+					</tr>
+
+					<tr>
+						<td style="border-top:solid"><select id="2f" onchange="copySelection('2f', '1e2f', 2)">
+  								<option value="2f">2F</option>
+  								<option value="argentina">Argentina</option>
+  								<option value="bosnia_herz">Bosnia-Herz</option>
+  								<option value="iran">Iran</option>
+  								<option value="nigeria">Nigeria</option>
+						</select></td>
+						<td></td>
+						<td style="border-left:solid;border-right:solid"></td>
+						<td></td>
+						<td></td>
+						<td style="border-right:solid"></td>
+						<td style="border-right:solid"></td>
+						<td></td>
+						<td style="border-top:solid"><select id="2e" onchange="copySelection('2e', '1f2e', 2)">
+  								<option value="2e">2E</option>
+  								<option value="switzerland">Switzerland</option>
+  								<option value="ecuador">Ecuador</option>
+  								<option value="france">France</option>
+  								<option value="honduras">Honduras</option>
+						</select></td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td style="border-left:solid;border-top:solid"><select id="1e2f.1g2h" onchange="copySelection('1e2f.1g2h', 'final1', 2)">
+						</select></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="border-right:solid;border-top:solid"><select id="1f2e.1h2g" onchange="copySelection('1f2e.1h2g', 'final2', 2)">
+						</select></td>
+						<td></td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td style="border-bottom:solid"><select id="1g" onchange="copySelection('1g', '1g2h', 1)">
+  								<option value="1g">1G</option>
+  								<option value="germany">Germany</option>
+  								<option value="portugal">Portugal</option>
+  								<option value="ghana">Ghana</option>
+  								<option value="USA">USA</option>
+						</select></td>
+						<td></td>
+						<td style="border-left:solid"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="border-right:solid"></td>
+						<td></td>
+						<td style="border-bottom:solid"><select id="1h" onchange="copySelection('1h', '1h2g', 1)">
+  								<option value="1h">1H</option>
+  								<option value="belgium">Belgium</option>
+  								<option value="algeria">Algeria</option>
+  								<option value="russia">Russia</option>
+  								<option value="south_korea">South Korea</option>
+						</select></td>
+					</tr>
+
+					<tr>
+						<td style="border-right:solid"></td>
+						<td style="border-top:solid"><select id="1g2h" onchange="copySelection('1g2h', '1e2f.1g2h', 2)">
+						</select></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="border-top:solid"><select id="1h2g" onchange="copySelection('1h2g', '1f2e.1h2g', 2)">
+						</select></td>
+						<td style="border-left:solid"></td>
+					</tr>
+
+					<tr>
+						<td style="border-top:solid"><select id="2h" onchange="copySelection('2h', '1g2h', 2)">
+  								<option value="2h">2H</option>
+  								<option value="belgium">Belgium</option>
+  								<option value="algeria">Algeria</option>
+  								<option value="russia">Russia</option>
+  								<option value="south_korea">South Korea</option>
+						</select></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td style="border-top:solid"><select id="2g" onchange="copySelection('2g', '1h2g', 2)">
+  								<option value="2g">2G</option>
+  								<option value="germany">Germany</option>
+  								<option value="portugal">Portugal</option>
+  								<option value="ghana">Ghana</option>
+  								<option value="USA">USA</option>
+						</select></td>
+					</tr>
+				</table>
+				<br>
+			</form>
+			<p>Instructions: Pick your teams and print when your finished so you can compete with your friends for the best bracket!</p>
+			</div>
+
+	</div>
+</body>
+</html>
